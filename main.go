@@ -205,7 +205,7 @@ func main() {
 
 	go func() {
 		for {
-			// wait for rabbit to be ready
+			// wait for rabbit to be ready //
 			ready := <-rabbitReady
 			log.Printf("Rabbit MQ ready %v\n", ready)
 
